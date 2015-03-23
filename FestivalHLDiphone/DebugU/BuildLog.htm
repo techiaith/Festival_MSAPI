@@ -1,0 +1,63 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: FestivalHLDiphone, Configuration: Unicode Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Dev\Wispr\Vs6\Festival_MSAPI\FestivalHLDiphone\DebugU\RSP000010.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_USRDLL" /D "_UNICODE" /FD /EHsc /RTC1 /MTd /Yu"stdafx.h" /Fp".\DebugU/FestivalHLDiphone.pch" /Fo".\DebugU/" /Fd".\DebugU/" /W3 /c /ZI /TP
+.\FestivalHLDiphoneObj.cpp
+.\FestivalHLDiphone.cpp
+]
+Creating command line "cl.exe @c:\Dev\Wispr\Vs6\Festival_MSAPI\FestivalHLDiphone\DebugU\RSP000010.rsp /nologo"
+Creating command line "rc.exe /d "_DEBUG" /l 0x809 /I ".\DebugU" /fo".\DebugU/FestivalHLDiphone.res" .\FestivalHLDiphone.rc"
+Creating temporary file "c:\Dev\Wispr\Vs6\Festival_MSAPI\FestivalHLDiphone\DebugU\RSP000011.rsp" with contents
+[
+/OUT:".\DebugU/FestivalHLDiphone.dll" /INCREMENTAL:NO /NOLOGO /DLL /DEF:".\FestivalHLDiphone.def" /DEBUG /PDB:".\DebugU/FestivalHLDiphone.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:".\DebugU/FestivalHLDiphone.lib" /MACHINE:X86 odbc32.lib odbccp32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib \Dev\Wispr\Vs6\Festival_MSAPI\FestivalTTSEngine\Debug\FestivalTTSEngine.lib \Dev\Wispr\Vs6\Festival_MSAPI\FestivalClient\Debug\FestivalClient.lib
+.\DebugU\FestivalHLDiphone.obj
+.\DebugU\FestivalHLDiphone.res
+.\DebugU\FestivalHLDiphoneObj.obj
+.\DebugU\StdAfx.obj
+]
+Creating command line "link.exe @c:\Dev\Wispr\Vs6\Festival_MSAPI\FestivalHLDiphone\DebugU\RSP000011.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+FestivalHLDiphoneObj.cpp
+FestivalHLDiphone.cpp
+Generating Code...
+Compiling resources...
+Linking...
+LINK : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllCanUnloadNow' should not be assigned an ordinal
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllGetClassObject' should not be assigned an ordinal
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllRegisterServer' should not be assigned an ordinal
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllUnregisterServer' should not be assigned an ordinal
+   Creating library .\DebugU/FestivalHLDiphone.lib and object .\DebugU/FestivalHLDiphone.exp
+LINK : warning LNK4098: defaultlib 'LIBCD' conflicts with use of other libs; use /NODEFAULTLIB:library
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _setsockopt@20 referenced in function _festival_socket_open
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _connect@12 referenced in function _festival_socket_open
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _htons@4 referenced in function _festival_socket_open
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _gethostbyname@4 referenced in function _festival_socket_open
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _inet_addr@4 referenced in function _festival_socket_open
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _socket@12 referenced in function _festival_socket_open
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _WSAStartup@8 referenced in function _festival_socket_open
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _recv@16 referenced in function _flushSocket
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _send@16 referenced in function _festivalStringToWave_oneWay
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _WSACleanup@0 referenced in function _festivalClose
+FestivalTTSEngine.lib(festival_client.obj) : error LNK2019: unresolved external symbol _closesocket@4 referenced in function _festivalClose
+.\DebugU/FestivalHLDiphone.dll : fatal error LNK1120: 11 unresolved externals
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Dev\Wispr\Vs6\Festival_MSAPI\FestivalHLDiphone\DebugU\BuildLog.htm"
+FestivalHLDiphone - 12 error(s), 6 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

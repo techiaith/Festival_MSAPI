@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="FestivalHLDiphone"
+	SccProjectName="&quot;$/WISPR/MSAPI&quot;, TNCAAAAA"
+	SccAuxPath=""
+	SccLocalPath="."
+	SccProvider="MSSCCI:Microsoft Visual SourceSafe"
+	Keyword="AtlProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Unicode Debug|Win32"
+			OutputDirectory=".\DebugU"
+			IntermediateDirectory=".\DebugU"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="C:\festival\festival\src\include"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="1"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\DebugU/FestivalHLDiphone.pch"
+				AssemblerListingLocation=".\DebugU/"
+				ObjectFile=".\DebugU/"
+				ProgramDataBaseFileName=".\DebugU/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="if &quot;%OS%&quot;==&quot;&quot; goto NOTNT
+if not &quot;%OS%&quot;==&quot;Windows_NT&quot; goto NOTNT
+regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+goto end
+:NOTNT
+echo Warning : Cannot register Unicode DLL on Windows 95
+:end
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="odbc32.lib odbccp32.lib winmm.lib"
+				OutputFile=".\DebugU/FestivalHLDiphone.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\FestivalHLDiphone.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=".\DebugU/FestivalHLDiphone.pdb"
+				SubSystem="2"
+				ImportLibrary=".\DebugU/FestivalHLDiphone.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\DebugU/FestivalHLDiphone.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="2057"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Release MinDependency|Win32"
+			OutputDirectory=".\ReleaseUMinDependency"
+			IntermediateDirectory=".\ReleaseUMinDependency"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			UseOfATL="1"
+			ATLMinimizesCRunTimeLibraryUsage="TRUE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="C:\festival\festival\src\include"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="0"
+				EnableFunctionLevelLinking="TRUE"
+				PrecompiledHeaderFile=".\ReleaseUMinDependency/FestivalHLDiphone.pch"
+				AssemblerListingLocation=".\ReleaseUMinDependency/"
+				ObjectFile=".\ReleaseUMinDependency/"
+				ProgramDataBaseFileName=".\ReleaseUMinDependency/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="if &quot;%OS%&quot;==&quot;&quot; goto NOTNT
+if not &quot;%OS%&quot;==&quot;Windows_NT&quot; goto NOTNT
+regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+goto end
+:NOTNT
+echo Warning : Cannot register Unicode DLL on Windows 95
+:end
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="odbc32.lib odbccp32.lib winmm.lib wsock32.lib sapi.lib"
+				OutputFile=".\ReleaseUMinDependency/FestivalHLDiphone.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\FestivalHLDiphone.def"
+				ProgramDatabaseFile=".\ReleaseUMinDependency/FestivalHLDiphone.pdb"
+				SubSystem="2"
+				ImportLibrary=".\ReleaseUMinDependency/FestivalHLDiphone.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\ReleaseUMinDependency/FestivalHLDiphone.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="2057"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release MinDependency|Win32"
+			OutputDirectory=".\ReleaseMinDependency"
+			IntermediateDirectory=".\ReleaseMinDependency"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			UseOfATL="1"
+			ATLMinimizesCRunTimeLibraryUsage="TRUE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="C:\festival\festival\src\include"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="0"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\ReleaseMinDependency/FestivalHLDiphone.pch"
+				AssemblerListingLocation=".\ReleaseMinDependency/"
+				ObjectFile=".\ReleaseMinDependency/"
+				ProgramDataBaseFileName=".\ReleaseMinDependency/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="odbc32.lib odbccp32.lib winmm.lib"
+				OutputFile=".\ReleaseMinDependency/FestivalHLDiphone.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\FestivalHLDiphone.def"
+				ProgramDatabaseFile=".\ReleaseMinDependency/FestivalHLDiphone.pdb"
+				SubSystem="2"
+				ImportLibrary=".\ReleaseMinDependency/FestivalHLDiphone.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\ReleaseMinDependency/FestivalHLDiphone.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="2057"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Release MinSize|Win32"
+			OutputDirectory=".\ReleaseUMinSize"
+			IntermediateDirectory=".\ReleaseUMinSize"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			UseOfATL="2"
+			ATLMinimizesCRunTimeLibraryUsage="TRUE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="C:\festival\festival\src\include"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="0"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\ReleaseUMinSize/FestivalHLDiphone.pch"
+				AssemblerListingLocation=".\ReleaseUMinSize/"
+				ObjectFile=".\ReleaseUMinSize/"
+				ProgramDataBaseFileName=".\ReleaseUMinSize/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="if &quot;%OS%&quot;==&quot;&quot; goto NOTNT
+if not &quot;%OS%&quot;==&quot;Windows_NT&quot; goto NOTNT
+regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+goto end
+:NOTNT
+echo Warning : Cannot register Unicode DLL on Windows 95
+:end
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="odbc32.lib odbccp32.lib winmm.lib"
+				OutputFile=".\ReleaseUMinSize/FestivalHLDiphone.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\FestivalHLDiphone.def"
+				ProgramDatabaseFile=".\ReleaseUMinSize/FestivalHLDiphone.pdb"
+				SubSystem="2"
+				ImportLibrary=".\ReleaseUMinSize/FestivalHLDiphone.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\ReleaseUMinSize/FestivalHLDiphone.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="2057"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release MinSize|Win32"
+			OutputDirectory=".\ReleaseMinSize"
+			IntermediateDirectory=".\ReleaseMinSize"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			UseOfATL="2"
+			ATLMinimizesCRunTimeLibraryUsage="TRUE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="C:\festival\festival\src\include"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="0"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\ReleaseMinSize/FestivalHLDiphone.pch"
+				AssemblerListingLocation=".\ReleaseMinSize/"
+				ObjectFile=".\ReleaseMinSize/"
+				ProgramDataBaseFileName=".\ReleaseMinSize/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="odbc32.lib odbccp32.lib winmm.lib"
+				OutputFile=".\ReleaseMinSize/FestivalHLDiphone.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\FestivalHLDiphone.def"
+				ProgramDatabaseFile=".\ReleaseMinSize/FestivalHLDiphone.pdb"
+				SubSystem="2"
+				ImportLibrary=".\ReleaseMinSize/FestivalHLDiphone.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\ReleaseMinSize/FestivalHLDiphone.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="2057"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory=".\Debug"
+			IntermediateDirectory=".\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="C:\festival\festival\src\include"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;SYSTEM_IS_WIN32"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="5"
+				PrecompiledHeaderFile=".\Debug/FestivalHLDiphone.pch"
+				AssemblerListingLocation=".\Debug/"
+				ObjectFile=".\Debug/"
+				ProgramDataBaseFileName=".\Debug/"
+				WarningLevel="0"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="FALSE"
+				AdditionalDependencies="winmm.lib wsock32.lib"
+				OutputFile=".\Debug/FestivalHLDiphone.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				IgnoreAllDefaultLibraries="FALSE"
+				IgnoreDefaultLibraryNames="libcd.lib libc.lib libcpmtd.lib libcmtd.lib"
+				ModuleDefinitionFile=".\FestivalHLDiphone.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=".\Debug/FestivalHLDiphone.pdb"
+				SubSystem="2"
+				ImportLibrary=".\Debug/FestivalHLDiphone.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\Debug/FestivalHLDiphone.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="2057"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="FestivalHLDiphone.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinDependency|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;_UNICODE;_ATL_STATIC_REGISTRY;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinDependency|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;_ATL_STATIC_REGISTRY;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinSize|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;_UNICODE;_ATL_DLL;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinSize|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;_ATL_DLL;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="FestivalHLDiphone.def">
+			</File>
+			<File
+				RelativePath="FestivalHLDiphone.idl">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\FestivalHLDiphone.tlb"
+						HeaderFileName="FestivalHLDiphone.h"
+						InterfaceIdentifierFileName="FestivalHLDiphone_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinDependency|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\FestivalHLDiphone.tlb"
+						HeaderFileName="FestivalHLDiphone.h"
+						InterfaceIdentifierFileName="FestivalHLDiphone_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinDependency|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\FestivalHLDiphone.tlb"
+						HeaderFileName="FestivalHLDiphone.h"
+						InterfaceIdentifierFileName="FestivalHLDiphone_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinSize|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\FestivalHLDiphone.tlb"
+						HeaderFileName="FestivalHLDiphone.h"
+						InterfaceIdentifierFileName="FestivalHLDiphone_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinSize|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\FestivalHLDiphone.tlb"
+						HeaderFileName="FestivalHLDiphone.h"
+						InterfaceIdentifierFileName="FestivalHLDiphone_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\FestivalHLDiphone.tlb"
+						HeaderFileName="FestivalHLDiphone.h"
+						InterfaceIdentifierFileName="FestivalHLDiphone_i.c"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="FestivalHLDiphone.rc">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions="_DEBUG;$(NoInherit)"
+						AdditionalIncludeDirectories="$(OUTDIR)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinDependency|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions="NDEBUG;$(NoInherit)"
+						AdditionalIncludeDirectories="$(OUTDIR)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinDependency|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+						AdditionalIncludeDirectories="$(OUTDIR)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinSize|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions="NDEBUG;$(NoInherit)"
+						AdditionalIncludeDirectories="$(OUTDIR)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinSize|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+						AdditionalIncludeDirectories="$(OUTDIR)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+						AdditionalIncludeDirectories="$(OUTDIR)"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="FestivalHLDiphoneObj.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinDependency|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;_UNICODE;_ATL_STATIC_REGISTRY;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinDependency|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;_ATL_STATIC_REGISTRY;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinSize|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;_UNICODE;_ATL_DLL;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinSize|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="1"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;_ATL_DLL;_ATL_MIN_CRT;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="FestivalHLDiphone.h">
+			</File>
+			<File
+				RelativePath="FestivalHLDiphoneObj.h">
+			</File>
+			<File
+				RelativePath="Resource.h">
+			</File>
+			<File
+				RelativePath="StdAfx.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File
+				RelativePath="FestivalHLDiphoneObj.rgs">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

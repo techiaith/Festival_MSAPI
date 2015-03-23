@@ -1,0 +1,73 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: FestivalHLDiphone, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\RSP000003.rsp" with contents
+[
+/Od /I "C:\festival\festival\src\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /FD /EHsc /RTC1 /MLd /Fp".\Debug/FestivalHLDiphone.pch" /Fo".\Debug/" /Fd".\Debug/" /FR".\Debug/" /W0 /c /ZI /TP
+.\FestivalHLDiphoneObj.cpp
+.\FestivalHLDiphone.cpp
+]
+Creating command line "cl.exe @c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\RSP000003.rsp /nologo"
+Creating temporary file "c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\RSP000004.rsp" with contents
+[
+/OUT:".\Debug/FestivalHLDiphone.dll" /INCREMENTAL:NO /NOLOGO /DLL /NODEFAULTLIB:"libcd.lib libc.lib libcpmtd.lib libcmtd.lib" /DEF:".\FestivalHLDiphone.def" /DEBUG /PDB:".\Debug/FestivalHLDiphone.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:".\Debug/FestivalHLDiphone.lib" /MACHINE:X86 winmm.lib wsock32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib \cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalTTSEngine\Debug\FestivalTTSEngine.lib
+.\Debug\FestivalHLDiphone.obj
+.\Debug\FestivalHLDiphone.res
+.\Debug\FestivalHLDiphoneObj.obj
+]
+Creating command line "link.exe @c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\RSP000004.rsp"
+Creating temporary file "c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\RSP000005.rsp" with contents
+[
+/o ".\Debug/FestivalHLDiphone.bsc"
+.\Debug\FestivalHLDiphone.sbr
+.\Debug\FestivalHLDiphoneObj.sbr
+]
+Creating command line "bscmake.exe @c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\RSP000005.rsp /nologo"
+Creating temporary file "c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\BAT000006.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\FestivalHLDiphone.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line "c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\BAT000006.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+FestivalHLDiphoneObj.cpp
+FestivalHLDiphone.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllCanUnloadNow' should not be assigned an ordinal
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllGetClassObject' should not be assigned an ordinal
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllRegisterServer' should not be assigned an ordinal
+.\FestivalHLDiphone.def : warning LNK4222: exported symbol 'DllUnregisterServer' should not be assigned an ordinal
+   Creating library .\Debug/FestivalHLDiphone.lib and object .\Debug/FestivalHLDiphone.exp
+LINK : warning LNK4098: defaultlib 'LIBC' conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating browse information file...
+Microsoft Browse Information Maintenance Utility Version 7.10.3077
+Copyright (C) Microsoft Corporation. All rights reserved.
+Performing registration
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\cygwin\home\cbs204\gwaith\svn\repos\Wispr\Software\Msapi\Trunk\Festival_MSAPI\FestivalHLDiphone\Debug\BuildLog.htm"
+FestivalHLDiphone - 0 error(s), 6 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

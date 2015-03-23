@@ -1,0 +1,25 @@
+HKCR
+{
+	FestivalHLDiphone.FestivalHLDiphoneObj.1 = s 'FestivalHLDiphoneObj Class'
+	{
+		CLSID = s '{AF2B539D-21C6-49EF-A8C0-811190FD8D35}'
+	}
+	FestivalHLDiphone.FestivalHLDiphoneObj = s 'FestivalHLDiphoneObj Class'
+	{
+		CLSID = s '{AF2B539D-21C6-49EF-A8C0-811190FD8D35}'
+		CurVer = s 'FestivalHLDiphone.FestivalHLDiphoneObj.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {AF2B539D-21C6-49EF-A8C0-811190FD8D35} = s 'FestivalHLDiphoneObj Class'
+		{
+			ProgID = s 'FestivalHLDiphone.FestivalHLDiphoneObj.1'
+			VersionIndependentProgID = s 'FestivalHLDiphone.FestivalHLDiphoneObj'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{BAF8D580-F447-4CA9-B080-14DDA965C371}'
+		}
+	}
+}
