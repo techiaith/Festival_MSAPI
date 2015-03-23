@@ -1,0 +1,30 @@
+// FestivalHLDiphone.idl : IDL source for FestivalHLDiphone.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FestivalHLDiphone.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "sapiddk.idl";
+
+[
+	uuid(BAF8D580-F447-4CA9-B080-14DDA965C371),
+	version(1.0),
+	helpstring("FestivalHLDiphone 1.0 Type Library")
+]
+library FESTIVALHLDIPHONELib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(AF2B539D-21C6-49EF-A8C0-811190FD8D35),
+		helpstring("FestivalHLDiphoneObj Class")
+	]
+	coclass FestivalHLDiphoneObj
+	{
+		[default] interface ISpTTSEngine;
+		interface ISpObjectWithToken;
+	};
+};

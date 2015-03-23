@@ -1,0 +1,46 @@
+# Microsoft Developer Studio Generated Dependency File, included by FestivalHLDiphone.mak
+
+.\FestivalHLDiphone.cpp : \
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\sapi.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\sapiddk.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\spcollec.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\spddkhlp.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\spdebug.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\sperror.h"\
+	"..\..\..\..\..\Program Files\Microsoft Speech SDK 5.1\Include\sphelper.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\FestivalClient\festival_client.h"\
+	"..\FestivalClient\festival_client_cpp_wrapper.h"\
+	"..\FestivalTTSEngine\FestivalTTSEngineObj.h"\
+	".\FestivalHLDiphone.h"\
+	".\FestivalHLDiphone_i.c"\
+	".\FestivalHLDiphoneObj.h"\
+	".\StdAfx.h"\
+	
+
+.\FestivalHLDiphone.rc : \
+	".\FestivalHLDiphone.tlb"\
+	".\FestivalHLDiphoneObj.rgs"\
+	
+
+.\FestivalHLDiphoneObj.cpp : \
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\sapi.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\sapiddk.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\spcollec.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\spddkhlp.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\spdebug.h"\
+	"..\..\..\..\..\program files\microsoft speech sdk 5.1\include\sperror.h"\
+	"..\..\..\..\..\Program Files\Microsoft Speech SDK 5.1\Include\sphelper.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\FestivalClient\festival_client.h"\
+	"..\FestivalClient\festival_client_cpp_wrapper.h"\
+	"..\FestivalTTSEngine\FestivalTTSEngineObj.h"\
+	".\FestivalHLDiphone.h"\
+	".\FestivalHLDiphoneObj.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	

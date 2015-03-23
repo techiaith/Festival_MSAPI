@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FestivalTTSEngine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP118.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Dev\WISPR\Local Copy\Festival_MSAPI\FestivalTTSEngine\FestivalTTSEngineObj.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP118.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\FestivalTTSEngine.lib"  ".\Debug\FestivalTTSEngineObj.obj" "\Dev\WISPR\Local Copy\Festival_MSAPI\FestivalClient\Debug\FestivalClient.lib" "
+<h3>Output Window</h3>
+Compiling...
+FestivalTTSEngineObj.cpp
+c:\dev\wispr\local copy\festival_msapi\festivalttsengine\festivalttsengineobj.cpp(107) : warning C4229: anachronism used : modifiers on data are ignored
+Creating library...
+<h3>
+--------------------Configuration: FestivalHLDiphone - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP119.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Dev\WISPR\Local Copy\Festival_MSAPI\FestivalHLDiphone\FestivalHLDiphone.cpp"
+"C:\Dev\WISPR\Local Copy\Festival_MSAPI\FestivalHLDiphone\FestivalHLDiphoneObj.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP119.tmp" 
+Creating temporary file "C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP11A.tmp" with contents
+[
+kernel32.lib user32.lib ole32.lib oleaut32.lib uuid.lib winmm.lib wsock32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/FestivalHLDiphone.pdb" /debug /machine:I386 /nodefaultlib:"libcd.lib" /def:".\FestivalHLDiphone.def" /out:"Debug/FestivalHLDiphone.dll" /implib:"Debug/FestivalHLDiphone.lib" /pdbtype:sept 
+".\Debug\FestivalHLDiphone.obj"
+".\Debug\FestivalHLDiphoneObj.obj"
+".\Debug\StdAfx.obj"
+".\Debug\FestivalHLDiphone.res"
+"\Dev\WISPR\Local Copy\Festival_MSAPI\FestivalTTSEngine\Debug\FestivalTTSEngine.lib"
+"\Dev\WISPR\Local Copy\Festival_MSAPI\FestivalClient\Debug\FestivalClient.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP11A.tmp"
+Creating temporary file "C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP11B.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\FestivalHLDiphone.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\Ambrose\LOCALS~1\Temp\RSP11B.bat"
+Compiling...
+FestivalHLDiphone.cpp
+Generating Code...
+Compiling...
+FestivalHLDiphoneObj.cpp
+Generating Code...
+Linking...
+   Creating library Debug/FestivalHLDiphone.lib and object Debug/FestivalHLDiphone.exp
+<h3>Output Window</h3>
+Performing registration
+
+
+
+<h3>Results</h3>
+FestivalHLDiphone.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

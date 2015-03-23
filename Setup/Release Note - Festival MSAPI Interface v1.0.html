@@ -1,0 +1,824 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v1.0.files/filelist.xml">
+<link rel=Edit-Time-Data
+href="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v1.0.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Release Note - Festival MSAPI Interface v1.0</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:black;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	margin-bottom:14.2pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:black;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	margin-bottom:14.2pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:black;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1641763605;
+	mso-list-type:hybrid;
+	mso-list-template-ids:480431452 593770004 72482841 72482843 72482831 72482841 72482843 72482831 72482841 72482843;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:38.25pt;
+	mso-level-number-position:left;
+	margin-left:38.25pt;
+	text-indent:-20.25pt;}
+@list l0:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabl Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.TableNormal
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<meta name=CREATED content="20051020;13540800">
+<meta name=CHANGED content="20051020;14140668">
+</head>
+
+<body lang=CY link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<table class=TableNormal border=0 cellpadding=0 width="100%" style='width:100.0%;
+ mso-cellspacing:1.5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:center'><span
+  style='color:windowtext'><img width=400 height=100 id="_x0000_i1025"
+  src="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v0.5_files/WISPRLogo.gif"
+  alt="WISPR - Welsh and Irish Speech Processing Resources" border=0><br>
+  </span><b><span style='font-family:Arial;color:windowtext'>Welsh and Irish
+  Speech Processing Resources</span></b><span style='color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal align=right style='margin-bottom:12.0pt;text-align:right'><span
+  style='color:windowtext'><img width=62 height=100 id="_x0000_i1026"
+  src="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v0.5_files/white-1inch.jpg"
+  style='height:100px;width:62px'>&nbsp; <img width=75 height=100
+  id="_x0000_i1027"
+  src="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v0.5_files/tcd.gif"
+  style='height:100px;width:75px'>&nbsp; <img width=77 height=100
+  id="_x0000_i1028"
+  src="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v0.5_files/ucd.gif"
+  style='height:100px;width:77px'>&nbsp;<img width=101 height=83
+  id="_x0000_i1029"
+  src="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v0.5_files/dcu.gif"
+  style='height:83px;width:101px'>&nbsp; <img width=356 height=88
+  id="_x0000_i1030"
+  src="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v0.5_files/eu.jpg"
+  style='height:88px;width:356px'>&nbsp;&nbsp;&nbsp; <img width=84 height=70
+  id="_x0000_i1031"
+  src="Release%20Note%20-%20Festival%20MSAPI%20Interface%20v0.5_files/image017.jpg"
+  style='height:70px;width:84px'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 align=center style='text-align:center'><span lang=EN-GB style='font-size:
+18.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Welsh Text-to-Speech for
+Windows</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h1>
+
+<h2 align=center style='text-align:center'><i><span lang=EN-GB
+style='font-family:Arial;mso-ansi-language:EN-GB'>Festival Speech Synthesis
+System MSAPI Interface with Welsh Voices, v1.0</span></i><span lang=EN-GB
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></h2>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>REMARKS</span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>This is the first public release of three Welsh voices
+developed as part of the WISPR (Welsh and Irish Speech Processing Resource)
+project by Speech Technologies (Canolfan <span class=SpellE>Bedwyr</span>), <st1:place
+w:st="on"><st1:PlaceType w:st="on">University</st1:PlaceType> of <st1:PlaceName
+ w:st="on">Wales Bangor</st1:PlaceName></st1:place>.</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>Windows integration is possible via additional
+software components developed by Speech Technologies (Canolfan <span
+class=SpellE>Bedwyr</span>), <st1:placetype w:st="on"><st1:place w:st="on"><st1:PlaceType
+ w:st="on">University</st1:placetype></st1:PlaceType> of <st1:placename w:st="on"><st1:PlaceName
+ w:st="on">Wales</st1:placename> <st1:city w:st="on">Bangor</st1:city></st1:PlaceName></st1:place>,
+that bridge Windows and Festival via the MSAPI (Microsoft Speech API) standard.
+This release has the minimum support for MSAPI needed to support basic speak
+functionality.</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The Welsh text to speech voice fulfils basic support
+for the speak command in MSAPI. </span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The ability to vary the speech rate of the voice is
+also supported. </span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The Festival system has been stripped down to a minimum
+in order to decrease the installer for the three Welsh voices to 56Mb</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The licensing of all speech resources produced by the
+WISPR project is BSD-like, meaning you have the freedom to use this software in
+your projects or products at no financial cost. The source code for the MSAPI
+components will be published soon, but if you have an immediate need then
+please contact d.b.jones@bangor.ac.uk</span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>VOICES
+INCLUDED<o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Three voices are included in the installer. One of them can be selected
+at installation time. Instructions to change the active voice after
+installation are given in the <a href="#_TECHNICAL/DEVELOPERS_NOTES">‘Configuration
+file’ section</a> below.<o:p></o:p></span></p>
+
+<p style='margin-left:38.25pt;text-indent:-20.25pt;mso-list:l0 level1 lfo2;
+tab-stops:list 38.25pt'><![if !supportLists]><span lang=EN-GB style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Courier New";mso-ansi-language:EN-GB'><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN-GB style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>cb_cy_llg_diphone</span></span><span lang=EN-GB style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>: North Welsh male, sampling rate 16k<o:p></o:p></span></p>
+
+<p style='margin-left:38.25pt;text-indent:-20.25pt;mso-list:l0 level1 lfo2;
+tab-stops:list 38.25pt'><![if !supportLists]><span lang=EN-GB style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Courier New";mso-ansi-language:EN-GB'><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN-GB style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>cb_cy_cw_diphone</span></span><span lang=EN-GB style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>: North Welsh female, sampling rate 16k<o:p></o:p></span></p>
+
+<p style='margin-left:38.25pt;text-indent:-20.25pt;mso-list:l0 level1 lfo2;
+tab-stops:list 38.25pt'><![if !supportLists]><span lang=EN-GB style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Courier New";mso-ansi-language:EN-GB'><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN-GB style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>hl_diphone</span></span><span lang=EN-GB style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>: South Welsh male, sampling rate 10k (<span
+class=SpellE>resampled</span> to 16k for output)<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Voices 1) and 2) were developed wholly by the WISPR project. Voice 3)
+was originally developed by Dr <span class=SpellE>Briony</span> Williams
+formerly of the Centre for Speech Technology Research (CSTR), Edinburgh.<o:p></o:p></span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>LOCATION</span></h3>
+
+<p style='margin-left:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>Installer: </span><span
+style='font-size:11.0pt;font-family:"Courier New"'><a
+href="http://www.e-gymraeg.org/wispr/1.0/wispr_msapi.zip">http://www.e-gymraeg.org/wispr/1.0/wispr_msapi.zip</a></span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>License Details: </span><span
+style='font-size:11.0pt;font-family:"Courier New"'><a
+href="http://www.e-gymraeg.org/wispr/1.0/LICENSE.html">http://www.e-gymraeg.org/wispr/1.0/LICENSE.html</a></span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>Acknowledgements: </span><span
+style='font-size:11.0pt;font-family:"Courier New"'><a
+href="http://www.e-gymraeg.org/wispr/1.0/ACKNOWLEDGEMENTS.html">http://www.e-gymraeg.org/wispr/1.0/ACKNOWLEDGEMENTS.html</a></span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>PREVIOUS
+RELEASES<o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>The URLs below refer to previous releases of the MSAPI framework, the
+early ones of which were available only to beta testers and interested parties.
+The <span class=SpellE>hl_diphone</span> voice alone was packaged with these
+releases.</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>Version 0.1: Release Note: </span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><a
+href="http://www.bangor.ac.uk/ar/cb/wispr/0.1/ReleaseNote.txt"><span lang=CY
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:CY'>http://www.bangor.ac.uk/ar/cb/wispr/0.1/ReleaseNote.txt</span></a></span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>Version 0.2: Release Note: </span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><a
+href="http://www.bangor.ac.uk/ar/cb/wispr/0.2/"><span lang=CY style='font-size:
+11.0pt;font-family:"Courier New";mso-ansi-language:CY'>http://www.bangor.ac.uk/ar/cb/wispr/0.2/</span></a></span><span
+style='font-size:11.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>Version 0.3: Release Note: </span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><a
+href="http://www.bangor.ac.uk/ar/cb/wispr/0.3/"><span lang=CY style='font-size:
+11.0pt;font-family:"Courier New";mso-ansi-language:CY'>http://www.bangor.ac.uk/ar/cb/wispr/0.3/</span></a></span><span
+style='font-size:11.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>Version 0.4 was produced for
+internal use and testing within Canolfan <span class=SpellE>Bedwyr</span> and
+was not released publicly<o:p></o:p></span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>Version 0.5: Release Note: <a
+href="http://www.e-gymraeg.org/wispr/0.5/">http://www.e-gymraeg.org/wispr/0.5/</a>
+<o:p></o:p></span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>FEATURES</span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class=SpellE>Config</span> file read on voice initialisation, allowing
+any installed Festival voice to be used with the MSAPI interface (see Technical
+notes)</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Support for stop speaking</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Support for varying the speech rate</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Standalone MSAPI interface; client-server setup is not required (see Technical
+Notes)</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Supports UTF-8 characters encoding and includes extra tokenisations found in
+menu options</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+'Time interpretation' tokenisation for the Welsh Speaking Clock </span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Error Logging (see Technical notes)</span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>KNOWN
+ISSUES &amp; LIMITATIONS</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-
+The MSAPI interface works best in Windows XP. The Festival engine might not work
+on Windows 98/ME/2000 machines. Please install onto these operating systems at
+your own risk.</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>- If
+the speech middleware within Windows is missing (as is common in Windows 98/ME)
+then the installer contains merge modules for adding these to your Control
+Panel. (<span class=GramE>see</span> 'Files Created or Used' section below)</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-
+For the time being, we can only label Windows XP Home and Professional as
+operating system requirements, though the installer is believed to work with
+Windows 2000 Professional also.</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-
+Many aspects of MSAPI support are missing e.g. change volume etc.</span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-
+Occasional temporary degradation of voice quality when switching to and from
+the voice<o:p></o:p></span></p>
+
+<p style='margin-left:2.0cm;text-indent:-18.15pt'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>-
+Intermittent ‘speeding up’ of the <span class=SpellE>hl_diphone</span> voice if
+Festival should output an <span class=SpellE>unresampled</span> 10k wav file
+(should normally be <span class=SpellE>resampled</span> to 16k)<o:p></o:p></span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>SYSTEM
+REQUIREMENTS</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- Windows XP
+Home/Professional</span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- Intel Pentium class
+processor (233 MHz or faster recommended)</span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- 64 MB RAM</span></p>
+
+<p style='margin-left:2.0cm'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- 60 MB free hard disk space</span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>INSTALLATION
+INSTRUCTIONS</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>To install the voice <o:p></o:p></span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- unzip all contents of zip
+file into a temporary table</span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- double click on setup.exe
+program</span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- follow instructions on
+screen.</span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- re-boot Windows if
+necessary</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>To hear the voice</span><span lang=EN-GB
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- Go to the Control Panel
+and choose the Speech icon.</span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- In Speech Properties
+dialog window, click on the 'Text to Speech' tab.</span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- In the voice selection
+dropdown select 'Festival Welsh <span class=SpellE>Diphone</span> Voice 0.3'</span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- Enter any Welsh text in
+the text box underneath</span></p>
+
+<p style='text-indent:36.0pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>- Press the 'Preview Voice'
+to listen to the voice, press stop to terminate the voice</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>If you experience any installation difficulties,
+please contact d.b.jones@bangor.ac.uk<o:p></o:p></span></p>
+
+<h3><span lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>CONFIGURATION</span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>Festival 1.96 beta (Created by Alan Black on September
+19<sup>th</sup> 2005, including Canolfan Bedwyr’s additions to support UTF-8) built
+with Microsoft Visual Studio .NET compiler (Make files generated in <span
+class=SpellE>Cygwin</span>)</span><span lang=EN-GB style='mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>MSAPI developed with Microsoft Speech SDK 5.1</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>Merge modules included in installer:</span></p>
+
+<p><span class=SpellE><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Courier New";mso-ansi-language:EN-GB'>SpPhones.msm</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:
+EN-GB'> - Universal Phone Set Merge Module. </span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>For further details see: http://www.microsoft.com/speech/download/old/ups.asp</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>To install Microsoft speech middleware and a Speech
+icon into your Control Panel (if not already there):</span></p>
+
+<p>&nbsp; <span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>Sp5.msm</span></p>
+
+<p>&nbsp; <span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>Sp5Intl.msm</span></p>
+
+<p>&nbsp; <span class=SpellE><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>SpCommon.msm</span></span></p>
+
+<p>&nbsp; <span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>(<span class=GramE>see</span> 'Microsoft Speech SDK
+Setup 5.1' topic in Microsoft Speech SDK 5.1 Help)</span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>FILES/DIRECTORIES CREATION</span><span lang=EN-GB
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Main directory)</span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival\lib&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Voice library files)</span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival\lib\etc</span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival\lib\multisyn</span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival\lib\voices\...</span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival\win32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(<span class=SpellE>Dll</span> and other win32 apps location)</span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival\win32\tmp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Temporary wave file folder)</span></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>C:\festival\festival\win32\log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Error logging)</span></p>
+
+<h3><a name="_TECHNICAL/DEVELOPERS_NOTES"></a><span lang=EN-GB
+style='font-family:Arial;mso-ansi-language:EN-GB'>TECHNICAL/DEVELOPERS NOTES</span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p><b><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>CONFIGURATION FILE</span><o:p></o:p></b></p>
+
+<p>&nbsp;<span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>A configuration file must be placed in
+C:\festival\festival\win32\config\config.ini. This file consists of two
+key=value pairs. The following keys must be present:<o:p></o:p></span></p>
+
+<p>&nbsp;<span class=GramE><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Courier New";mso-ansi-language:EN-GB'>command</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>
+(the exact command to start the voice from the Festival command-line, including
+the enclosing brackets)<o:p></o:p></span></p>
+
+<p>&nbsp;<span class=SpellE><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'>sampling_rate</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:
+EN-GB'> (in Hz)<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>For example:<o:p></o:p></span></p>
+
+<p><span class=GramE><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>command</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>=(<span
+class=SpellE>voice_cb_cy_llg_diphone</span>)<br>
+<span class=SpellE>sampling_rate</span>=16000<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>For the voices included with this release, the
+following commands can be used.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>(<span class=SpellE>voice_cb_cy_llg_diphone</span>):
+North Welsh <span class=GramE>male</span><br>
+(<span class=SpellE>voice_cb_cy_cw_diphone</span>): North Welsh female<br>
+(<span class=SpellE>voice_hl_diphone</span>): South Welsh male, with a lower
+internal sampling rate than the North Welsh voices.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The sampling rate should remain as 16000 for all
+voices.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>If a different voice is required, the file can be
+changed on the fly without having to re-start the MSAPI interface.<o:p></o:p></span></p>
+
+<p><b><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>ERROR LOG</span><o:p></o:p></b></p>
+
+<p>&nbsp;<span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>A log file is kept in C:\festival\festival\win32\log
+with the file names YYYYMM.txt, which traces any errors during the use of MSAPI/Festival
+interface.</span></p>
+
+<p>&nbsp;<span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>For example:</span></p>
+
+<p>&nbsp;<span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>2005/05/24 09:46:13 &nbsp;&nbsp; &nbsp;Error
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span class=SpellE>festival_eval_command</span>
+- (<span class=SpellE>voice_hl_diphone</span>) (0)<br>
+</span>&nbsp;<span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>2005/05/25 12:28:13 &nbsp;&nbsp; &nbsp;Error
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span class=SpellE>festival_text_to_wave</span>
+- 'Maximize' (0)</span></p>
+
+<p>&nbsp;<span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>And the information is logged in the following format:</span></p>
+
+<p>&nbsp;<span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>Time
+Stamp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Error
+encountered&nbsp;&nbsp;&nbsp;&nbsp; - Additional info&nbsp;&nbsp;&nbsp; (Error
+Code as generated by <span class=SpellE>GetLastError</span>)</span></p>
+
+<p>&nbsp;<b><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>TEMPORARY FOLDER CREATION</span><o:p></o:p></b></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>This folder is required to store the temporary wave
+file before it is played by MSAPI. Without this folder, the wave file can not
+be saved and as a result, the voice will not be played.</span></p>
+
+<p><b><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>SOURCE CODE</span><o:p></o:p></b></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The Windows Build Festival is built against festival
+version 1.96 beta and the associated <span class=SpellE>speech_tools</span>,
+from: </span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p style='margin-left:24.1pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/Software/Festival/WISPR/Merged/Snapshots/MSAPI_V1.0_20060623/festival">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/Software/Festival/WISPR/Merged/Snapshots/MSAPI_V1.0_20060623/festival</a></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p style='margin-left:24.1pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/Software/Festival/WISPR/Merged/Snapshots/MSAPI_V1.0_20060623/speech_tools">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/Software/Festival/WISPR/Merged/Snapshots/MSAPI_V1.0_20060623/speech_tools</a></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The common Voices folders packaged in this
+installation (LTS, Lexicon, <span class=GramE>Tokenisation</span>) are taken
+from:</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p style='margin-left:27.8pt'><span style='font-size:11.0pt;font-family:"Courier New"'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/common/Snapshot/MSAPI_V1.0_20060623/festival/lib/voices/">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/common/Snapshot/MSAPI_V1.0_20060623/festival/lib/voices/</a></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The <span class=SpellE>cb_cy_llg_diphone</span> folder
+packaged is taken from:<o:p></o:p></span></p>
+
+<p style='margin-left:27.8pt'><span class=MsoHyperlink><span style='font-size:
+11.0pt;font-family:"Courier New"'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/cb_cy_llg_diphone/Snapshot/MSAPI_V1.0_20060623">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/cb_cy_llg_diphone/Snapshot/MSAPI_V1.0_20060623</a></span></span><u><span
+style='font-size:11.0pt;font-family:"Courier New";color:blue'><o:p></o:p></span></u></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The <span class=SpellE>cb_cy_cw_diphone</span> folder
+packaged is taken from:<o:p></o:p></span></p>
+
+<p style='margin-left:27.8pt'><span class=MsoHyperlink><span style='font-size:
+11.0pt;font-family:"Courier New"'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/cb_cy_cw_diphone/Snapshot/MSAPI_V1.0_20060623">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/cb_cy_cw_diphone/Snapshot/MSAPI_V1.0_20060623</a><o:p></o:p></span></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The <span class=SpellE>hl_diphone</span> folder
+packaged is taken from:</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p style='margin-left:27.8pt'><span style='font-size:11.0pt;font-family:"Courier New"'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/hl_diphone/Snapshot/MSAPI_V1.0_20060623">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/hl_diphone/Snapshot/MSAPI_V1.0_20060623</a></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>The MSAPI solution is located at:</span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p style='margin-left:27.8pt'><span style='font-size:11.0pt;font-family:"Courier New"'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/Software/MSAPI/Snapshot/MSAPI_V1.0_20060623">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/Software/MSAPI/Snapshot/MSAPI_V1.0_20060623</a></span></p>
+
+<p><span lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";
+mso-ansi-language:EN-GB'>Note:</span><span lang=EN-GB style='mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p><span class=SpellE><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Courier New";mso-ansi-language:EN-GB'>Voices.scm</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Courier New";mso-ansi-language:
+EN-GB'> is taken from:</span></p>
+
+<p style='margin-left:27.8pt'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Courier New";mso-ansi-language:EN-GB'><a
+href="http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/common/Snapshot/MSAPI_V1.0_20060623/festival/lib/voices/">http://bedwyr-redhat.bangor.ac.uk/svn/repos/WISPR/FestVox_Voices/common/Snapshot/MSAPI_V1.0_20060623/festival/lib/</a></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

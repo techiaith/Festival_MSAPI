@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MSAPI_FEST_SETUP", "MSAPI_FEST_SETUP.vdproj", "{403752FE-56FA-410B-90FC-AAE5AC74D73E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{403752FE-56FA-410B-90FC-AAE5AC74D73E}.Debug.ActiveCfg = Debug
+		{403752FE-56FA-410B-90FC-AAE5AC74D73E}.Debug.Build.0 = Debug
+		{403752FE-56FA-410B-90FC-AAE5AC74D73E}.Release.ActiveCfg = Release
+		{403752FE-56FA-410B-90FC-AAE5AC74D73E}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
