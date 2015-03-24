@@ -15,6 +15,10 @@ Microsoft Windows.
 for their languages into Microsoft Windows. We also hope very much that others may fork and update this
 code for Windows 7/8 or even 10!
 
+## Setup
+The Setup directory contains a further Visual Studio solution for constructing the installer / MSI file. The directory contains all the contents that go into the installer, including merge modules, dlls and other binaries as well as the Welsh voice(s) data.
+
+
 ## In the meantime.....
 In the meantime our efforts at techiaith are focused on Festival on Linux/Raspberry Pis and the cloud. We now provide
 Festival's Welsh language voices via on online API (see https://github.com/PorthTechnolegauIaith/festival). We also have 
