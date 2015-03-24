@@ -1,0 +1,88 @@
+Creating a native Microsoft Windows build of Festival
+-----------------------------------------------------
+
+Rhys Jones, 12th July 2005
+
+These instructions have been tested with the following configurations:
+
+* Microsoft Visual C++ .NET 2003
+* Cygwin 1.5.17 with GNU make 3.80
+
+There is probably scope for flexibility in the versions of Cygwin and GNU make used. The version of Microsoft Visual Studio may be more critical. The Festival build instructions do, however, state that the build has been tested with Microsoft Visual C++ 5.
+
+1. Prerequisites
+----------------
+
+Verify that the following are installed on the system:
+
+* Microsoft Visual C++ (should appear as an entry in the start menu)
+* GNU make, within Cygwin
+
+To verify that GNU make has been installed, type
+
+make -v
+
+from a Cygwin command prompt. This should display the version information. If make has not been installed, return to the Cygwin installation program, and when prompted to select packages, choose 'make' from the Devel sub-category.
+
+2. Unpacking festival and speech_tools
+--------------------------------------
+
+Obtain your desired versions of festival and speech_tools from http://www.cstr.ed.ac.uk/projects/festival/ or http://www.festvox.org/festival/downloads.html . These should be unpacked from the same directory, so that two subdirectories are created, thus:
+
+ /--- festival --- ...
+-|
+ \--- speech_tools --- ...
+
+3. Building makefiles for Visual Studio
+---------------------------------------
+
+a) Open a Cygwin command prompt, and ensure that you are in the directory above the festival/ and speech_tools/ directories. If these are not within your Cygwin home directory, you will need to change to the C: drive. This can be done by changing to /cygdrive/c/ . For instance, if festival and speech_tools can be found under C:\festival, you need to type the following:
+
+cd /cygdrive/c/festival
+
+b) Execute the following from the command line:
+
+  cd speech_tools
+  make VCMakefile     (may take a while)
+  cp config/vc_config_make_rules-dist config/vc_config_make_rules
+
+  cd ../festival
+  make VCMakefile     (may take a while)
+  cp config/vc_config_make_rules-dist config/vc_config_make_rules
+
+c) Also execute this, making sure that you are still in the festival/ directory to which you changed above.
+
+  make -C src/modules init_modules.cc
+
+d) Again within the festival/ directory, edit the config/vc_config_make_rules file and ensure that the line which sets SYSTEM_LIB (the second command within the file) points towards the correct festival/lib directory within your installation.
+
+4. Building using Visual Studio
+-------------------------------
+
+a) Close the Cygwin command prompt if desired, and open a standard Windows command prompt (not Cygwin) - the easiest way of doing this is by going to the Start menu, clicking Run... and running 'cmd'.
+
+b) Run vcvars32.bat, to set the environment variables for running Visual Studio tools from the command line. If this command is not recognised by Windows, it may not be contained within the PATH. If this is the case, it can be run from within the relevant directory. For Visual Studio .NET 2003, this is:
+
+"c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\bin\vcvars32.bat"
+
+(the double quotes are necessary to prevent spaces from being interpreted as the end of the command)
+
+c) Change into the directory above the festival/ and speech_tools/ directories.
+
+d) Execute the following commands, to build festival and speech_tools. 
+
+  cd speech_tools
+  nmake /nologo /fVCMakefile    (will take a while)
+  cd ../festival
+  nmake /nologo /fVCMakefile    (will take a while)
+
+This completes the build process.
+
+5. Testing Festival
+-------------------
+
+Festival can be tested by changing into the relevant festival/ directory and running
+
+src\main\festival.exe
+
+from a Windows command prompt. Festival command-line mode can then be exited by typing Control-Z. Lexicons and voices will have to be unpacked/copied into Festival's subdirectories as per usual.
